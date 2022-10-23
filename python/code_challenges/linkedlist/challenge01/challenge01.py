@@ -29,20 +29,20 @@ class Linkedlist:
             currentNode=currentNode.nextNode
         print("None")
 
-    def deletegivenNode(self,node):
-        self.node = node
-        node.value=node.nextNode
-        node.next= node.nextNode
+def deletegivenNode(self,node):
+    self.node = node
+    node.value=node.nextNode
+    node.next= node.nextNode
         
         
 
 
 
 ll=Linkedlist()
-# ll.printLinkedList()
+ll.printLinkedList()
 
 ll.insert("3")
-# ll.printLinkedList()
+ll.printLinkedList()
 
 ll.insert("44")
 ll.printLinkedList()
