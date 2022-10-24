@@ -1,57 +1,42 @@
 # Write here the code challenge solution
 
-class LinkedListNode:
-    def __init__(self,value,nextNode=None):
-        self.value=value
-        self.nextNode=nextNode
-
-
-class Linkedlist:
-    def __init__(self,head=None):
-        self.head = head 
-
-    def insert(self,value):
-        node=LinkedListNode(value)
-        if self.head is None:
-            self.head=node
-            return 
-        currentNode = self.head
-        while True:
-            if currentNode.nextNode is None:
-                currentNode.nextNode = node
-                break
-            currentNode=currentNode.nextNode 
-
-    def printLinkedList(self):
-        currentNode= self.head
-        while currentNode is not None:
-            print(currentNode.value,"=>", end = ' ' )
-            currentNode=currentNode.nextNode
-        print("None")
-
-def deletegivenNode(self,node):
-    self.node = node
-    node.value=node.nextNode
-    node.next= node.nextNode
-        
-        
+from classLinkedList import LinkedListNode , Linkedlist
 
 
 
-ll=Linkedlist()
-ll.printLinkedList()
+def deletegivenNode(node):
+    if node.nextNode != None : 
+        node.value = node.nextNode.value
+        node.nextNode = node.nextNode.nextNode
+            
 
-ll.insert("3")
-ll.printLinkedList()
+if __name__ == '__main__':
+    ll=Linkedlist()
+    print(ll.printLinkedList())
 
-ll.insert("44")
-ll.printLinkedList()
+    node1=LinkedListNode(2)
+    ll.insert(node1)
+    print(ll.printLinkedList())
 
-ll.insert("55")
-ll.printLinkedList()
+    node2 = LinkedListNode(55)
+    ll.insert(node2)
+    print(ll.printLinkedList())
+    
 
-ll.deletegivenNode("44")
-ll.printLinkedList
+    node3 = LinkedListNode(44)
+    ll.insert(node3)
+    print(ll.printLinkedList())
+    deletegivenNode(node2)
+    # print(node2.value)
+    print(ll.printLinkedList())
+
+
+
+
+
+
+
+
 
 
 
