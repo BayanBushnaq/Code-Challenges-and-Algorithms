@@ -1,0 +1,1 @@
+![whiteboard](code_ch_Linkedlist1.png)
