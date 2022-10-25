@@ -4,6 +4,7 @@ from classLinkedList import Linkedlist , LinkedListNode
 from challenge01 import deletegivenNode
 
 def test_linkedlist():
+    ''' this test method ensure that the selected node was deleted'''
     ll=Linkedlist()
 
     node1=LinkedListNode(2)
