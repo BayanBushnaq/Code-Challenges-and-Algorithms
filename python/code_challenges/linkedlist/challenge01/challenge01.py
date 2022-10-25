@@ -5,6 +5,7 @@ from classLinkedList import LinkedListNode , Linkedlist
 
 
 def deletegivenNode(node):
+    ''' This function resbonsible to get the node and delete it from Linked List '''
     if node.nextNode != None : 
         node.value = node.nextNode.value
         node.nextNode = node.nextNode.nextNode
