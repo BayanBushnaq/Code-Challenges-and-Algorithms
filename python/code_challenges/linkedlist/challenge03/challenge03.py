@@ -32,10 +32,10 @@ class Linkedlist:
             currentNode=currentNode.nextNode
         x+='None'
         return x
-
+ 
     def remove_nth_node(self,number):
         ''' This method responsible remove the nth node from the end of the list and return its head'''
-        
+
         fast = slow = self.head
         for i in range (number):
             
