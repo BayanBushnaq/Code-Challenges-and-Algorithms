@@ -1,0 +1,1 @@
+![middle_linked_list](../challenge02/linkedlist2_whiteboard.png)
