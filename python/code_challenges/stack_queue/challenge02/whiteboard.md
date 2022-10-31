@@ -1,0 +1,1 @@
+![valid parantheses](../challenge02/valid_paran_whiteboard_1.png)
