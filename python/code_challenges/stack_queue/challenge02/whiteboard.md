@@ -1,1 +1,1 @@
-![valid parantheses](../challenge02/valid_paran_whiteboard_1.png)
+![valid parantheses](../challenge02/stack_parantheses_whiteboard.png)
