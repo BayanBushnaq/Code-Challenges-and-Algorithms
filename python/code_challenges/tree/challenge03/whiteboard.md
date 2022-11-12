@@ -1,0 +1,1 @@
+![BST_tree](./CodeChallenge_Tree3.png)
