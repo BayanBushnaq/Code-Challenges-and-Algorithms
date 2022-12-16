@@ -1,0 +1,1 @@
+![code challenge hashtable2](./hashtable%202.png)
