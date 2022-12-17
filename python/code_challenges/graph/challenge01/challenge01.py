@@ -73,8 +73,5 @@ def bfs(visited, graph, node):
         queue.append(neighbour)
 
 
-  
-
-
 if __name__ == "__main__":
     bfs(visited, graph, 'A')
