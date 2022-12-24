@@ -1,21 +1,21 @@
 # Write your test here
 
 import pytest 
-from challenge01 import bfs 
+from challenge01 import Graph 
 
 def test_dfs():
-    visited = []
-    graph = {
-  'A' : ['B','E','C'],
-  'B' : ['D'],
-  'C' : ['A','F'],
-  'D' : ['B','E'],
-  'E' : ['A','D','F','G'],
-  'F' : ['C','E','H','I'],
-  'G' : ['E','H'],
-  'H' : ['F','G','K'],
-  'I' : ['F','K'],
-  'K' : ['H','I']
-}
-    assert bfs(visited, graph, 'A') ==' A B E C D F G H I K % '
+  graph = Graph()
+
+  a = graph.add_node("A")
+  b = graph.add_node("B")
+  c = graph.add_node("C")
+  d = graph.add_node("D")
+
+  graph.add_edge(a,b)
+  graph.add_edge(a,c)
+  graph.add_edge(c,b)
+  graph.add_edge(d,b)
+  graph.add_edge(d,c)
+
+  assert graph.breadth_first(a)==['A', 'B', 'C', 'D']
      
