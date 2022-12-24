@@ -1,1 +1,1 @@
-![Two Sum BST](./CC%20-%20BST%20two%20sum.png)
+![Two Sum BST](./hashtable1.png)
