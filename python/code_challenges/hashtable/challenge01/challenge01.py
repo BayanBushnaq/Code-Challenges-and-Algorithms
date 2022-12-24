@@ -1,12 +1,14 @@
 # Write here the code challenge solution
 
 class Node:
+    """ Class Responsible to create a node """
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
 
 class BinarySearchTree:
+    """ Class Responsible to create a binary search tree """
     def __init__(self):
         self.root = None
 
@@ -32,6 +34,7 @@ class BinarySearchTree:
 
 
 def has_sum(tree, target):
+    ''' functuin responsible to check if summation of 2 nodes in BST are equal given target. '''
     # Create a stack to store the nodes we need to visit
     stack = []
     # Create a set to store the values of the nodes we have already visited
